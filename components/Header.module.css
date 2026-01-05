@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background: transparent;
+  transition: background var(--transition-normal), box-shadow var(--transition-normal);
+  z-index: var(--z-fixed);
+}
+
+.header.scrolled {
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-black);
+}
+
+.logoText {
+  letter-spacing: -0.02em;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.navLink {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  padding: var(--space-2) var(--space-4);
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.applyButton {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.applyButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+.mobileToggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+.mobileToggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-black);
+  transition: all var(--transition-fast);
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--color-gray-200);
+  margin-top: var(--space-4);
+}
+
+.mobileMenu a {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  padding: var(--space-2) 0;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  
+  .applyButton {
+    display: none;
+  }
+  
+  .mobileToggle {
+    display: flex;
+  }
+  
+  .mobileMenu {
+    display: flex;
+  }
+}
+

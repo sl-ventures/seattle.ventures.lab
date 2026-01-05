@@ -1,0 +1,24 @@
+# Copy this file to terraform.tfvars and update with your values
+
+project_id = "slventures"
+region     = "us-central1"
+environment = "prod"
+
+# Cloud Run Configuration
+cloud_run_service_name = "slventures-web"
+cloud_run_min_instances = 0
+cloud_run_max_instances = 10
+cloud_run_memory = "512Mi"
+cloud_run_cpu = "1"
+
+# Custom Domain (optional - leave empty if not using custom domain)
+domain_name = ""
+
+# Terraform State Bucket (optional - if empty, will use random suffix)
+# Set this if you created the bucket manually
+terraform_state_bucket_name = ""
+
+# Cloud Run Image Tag (must match an existing image in GCR)
+# Build and push image first: gcloud builds submit --tag gcr.io/slventures/slventures-web:latest
+cloud_run_image_tag = "latest"
+
