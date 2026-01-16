@@ -207,7 +207,7 @@ export default function Home() {
               <div className={styles.valueCard}>
                 <h3 className={styles.valueTitle}>The Bridge Model</h3>
                 <p className={styles.valueDescription}>
-                  We don't just accelerate—we reconstruct. Our six-month program transforms your business foundation for American resilience, from legal structure to market narrative.
+                  Three distinct tracks to fundability. Whether you need market validation (Launchpad), technical credibility (ProductLab), or capital injection (Pitch & Win)—we have a proven path for you.
                 </p>
               </div>
               <div className={styles.valueCard}>
@@ -265,39 +265,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* The Bridge Model */}
+        {/* The Bridge Model - 3 Tracks */}
         <section className="section">
           <div className="container">
             <h2 className="section-title">The Bridge Model</h2>
             <div className={styles.bridgeContent}>
               <p className={styles.bridgeIntro}>
-                We believe that standard acceleration is insufficient for international startups. You do not need a class on how to pitch; you need a strategic overhaul of your narrative for the American ear. Our program is a six-month residency designed to strip away the localized constraints of your business model and rebuild it for infinite scalability.
+                We offer three distinct paths to fundability, each utilizing our Silicon Valley partner network as the ultimate "testing ground." Choose your track based on your startup's current stage and most pressing need—market validation, technical credibility, or capital injection.
               </p>
               <div className={styles.phaseGrid}>
                 <div className={styles.phaseCard}>
-                  <div className={styles.phaseNumber}>I</div>
-                  <h3 className={styles.phaseTitle}>The Cultural & Legal Flip</h3>
-                  <p className={styles.phaseDuration}>Weeks 1-8</p>
+                  <div className={styles.phaseNumber}>1</div>
+                  <h3 className={styles.phaseTitle}>Launchpad</h3>
+                  <p className={styles.phaseDuration}>8 Weeks • GTM Sprint</p>
                   <p className={styles.phaseDescription}>
-                    Establish your Delaware C-Corp, safeguard your IP, and transform your pitch from traction-based narratives to vision-based storytelling that Silicon Valley investors demand.
+                    Transform your product into a viral sensation. Acquire 10,000+ users through strategic SNS campaigns and video content. Top performers fast-track to AI Summit stage at Plug and Play Tech Center.
                   </p>
+                  <span className={styles.phaseDeliverable}>→ 10,000+ users via SNS/Video</span>
                 </div>
                 <div className={styles.phaseCard}>
-                  <div className={styles.phaseNumber}>II</div>
-                  <h3 className={styles.phaseTitle}>US Market Immersion</h3>
-                  <p className={styles.phaseDuration}>Weeks 9-16</p>
+                  <div className={styles.phaseNumber}>2</div>
+                  <h3 className={styles.phaseTitle}>ProductLab</h3>
+                  <p className={styles.phaseDuration}>12 Weeks • Technical Siege</p>
                   <p className={styles.phaseDescription}>
-                    Deploy into the US enterprise ecosystem. Our partners work alongside you to secure your first five US pilot contracts, leveraging Seattle's proximity to Microsoft and Amazon.
+                    Validate your technology to Silicon Valley standards. Work with ex-FAANG engineers to build a production-ready PoC that passes rigorous VC technical due diligence. Leverage UW CoMotion Labs resources.
                   </p>
+                  <span className={styles.phaseDeliverable}>→ PoC & SV Engineering Audit</span>
                 </div>
                 <div className={styles.phaseCard}>
-                  <div className={styles.phaseNumber}>III</div>
-                  <h3 className={styles.phaseTitle}>The Fundraising Circuit</h3>
-                  <p className={styles.phaseDuration}>Weeks 17-24</p>
+                  <div className={styles.phaseNumber}>3</div>
+                  <h3 className={styles.phaseTitle}>Pitch & Win</h3>
+                  <p className={styles.phaseDuration}>6 Weeks • Capital Bridge</p>
                   <p className={styles.phaseDescription}>
-                    By now, you are a US company with global DNA. We curate exclusive sessions with partners from Sand Hill Road and Seattle's top firms, culminating in transition to our Alumni Forum.
+                    Secure investment from Silicon Valley's top VCs. Culminate in Demo Day with private VC room sessions. Prepare for Startup World Cup regional stage—compete for $1M investment prize.
                   </p>
+                  <span className={styles.phaseDeliverable}>→ Demo Day + Private VC Room</span>
                 </div>
+              </div>
+              <div className={styles.bridgeActions}>
+                <Button href="/program" variant="secondary" arrow>Explore All Tracks</Button>
               </div>
             </div>
           </div>
