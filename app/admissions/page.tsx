@@ -13,67 +13,264 @@ export default function Admissions() {
           <div className="container">
             <h1 className={styles.pageTitle}>Admissions</h1>
             <p className={styles.pageSubtitle}>
-              Benchmarking Alchemist's Exclusivity
+              Choose your path to Silicon Valley success
             </p>
           </div>
         </section>
 
-        {/* Who We Are Looking For */}
+        {/* Track Selection Guide */}
         <section className="section">
           <div className="container">
-            <div className={styles.contentBlock}>
-              <h2 className={styles.sectionHeading}>Who We Are Looking For</h2>
-              <p className={styles.narrative}>
-                We are seeking the outliers who feel constrained by their geography. We invest in technical founders who have built complex solutions—often in B2B SaaS, Deep Tech, or Logistics—and have already demonstrated traction in their home country. We are less interested in "ideas" and more interested in "proven engines" that need a larger fuel tank.
-              </p>
+            <h2 className="section-title">Find Your Track</h2>
+            <p className={styles.introText}>
+              Each track is designed for founders at different stages of their journey. 
+              Use the guide below to identify which program best fits your current needs.
+            </p>
+            
+            <div className={styles.trackComparisonTable}>
+              <table className={styles.comparisonTable}>
+                <thead>
+                  <tr>
+                    <th>Track</th>
+                    <th>Ideal Candidate</th>
+                    <th>Prerequisites</th>
+                    <th>Duration</th>
+                    <th>Cohort Start</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className={styles.trackName}>
+                      <span className={styles.trackBadge}>Track 1</span>
+                      Launchpad
+                    </td>
+                    <td>Early-stage founders with a validated idea seeking market traction</td>
+                    <td>
+                      <ul className={styles.prerequisiteList}>
+                        <li>Working MVP or prototype</li>
+                        <li>Basic market understanding</li>
+                        <li>Committed founding team</li>
+                      </ul>
+                    </td>
+                    <td>8 weeks</td>
+                    <td>Monthly</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.trackName}>
+                      <span className={styles.trackBadge}>Track 2</span>
+                      ProductLab
+                    </td>
+                    <td>Technical founders with an existing product needing SV-level validation</td>
+                    <td>
+                      <ul className={styles.prerequisiteList}>
+                        <li>Live product with users</li>
+                        <li>Technical founding team</li>
+                        <li>Initial traction (revenue or usage)</li>
+                      </ul>
+                    </td>
+                    <td>12 weeks</td>
+                    <td>Quarterly</td>
+                  </tr>
+                  <tr>
+                    <td className={styles.trackName}>
+                      <span className={styles.trackBadge}>Track 3</span>
+                      Pitch & Win
+                    </td>
+                    <td>Investment-ready founders preparing for a US fundraise</td>
+                    <td>
+                      <ul className={styles.prerequisiteList}>
+                        <li>$100K+ ARR or strong metrics</li>
+                        <li>Clear US expansion plan</li>
+                        <li>Ready for due diligence</li>
+                      </ul>
+                    </td>
+                    <td>6 weeks</td>
+                    <td>Q1, Q3</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
 
-        {/* 2026 Cohort Schedule */}
+        {/* Track Details */}
         <section className="section section-gray">
           <div className="container">
-            <h2 className="section-title">The 2026 Cohort Schedule</h2>
-            <p className={styles.scheduleIntro}>
-              The doors to Seattle Venture Labs open twice a year.
-            </p>
-            <div className={styles.cohortGrid}>
-              <div className={styles.cohortCard}>
-                <div className={styles.cohortBadge}>March 2026</div>
-                <h3 className={styles.cohortTitle}>Q1/Q2 Enterprise Focus</h3>
-                <p className={styles.cohortDescription}>
-                  Designed for founders ready to capitalize on Q1/Q2 enterprise budget cycles. Applications open in late 2025. This cohort focuses heavily on enterprise sales alignment and typically graduates during the peak of the Fall fundraising season.
-                </p>
-                <div className={styles.cohortDetails}>
-                  <p><strong>Applications Open:</strong> Late 2025</p>
-                  <p><strong>Program Start:</strong> March 2026</p>
-                  <p><strong>Graduation:</strong> Fall 2026</p>
+            <h2 className="section-title">Track Requirements</h2>
+            <div className={styles.trackDetailGrid}>
+              {/* Track 1 */}
+              <div className={styles.trackDetailCard}>
+                <div className={styles.trackDetailHeader}>
+                  <span className={styles.trackLabel}>Track 1</span>
+                  <h3 className={styles.trackDetailTitle}>Launchpad</h3>
+                  <p className={styles.trackDuration}>8 Weeks • Monthly Cohorts</p>
+                </div>
+                <div className={styles.trackDetailBody}>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Who Should Apply</h4>
+                    <p className={styles.detailText}>
+                      Early-stage founders who have a validated idea and working prototype but need help 
+                      acquiring their first significant user base in the US market. Ideal for founders 
+                      ready to execute aggressive go-to-market strategies.
+                    </p>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Application Requirements</h4>
+                    <ul className={styles.requirementList}>
+                      <li>Working MVP or functional prototype</li>
+                      <li>2-minute video pitch explaining your product and vision</li>
+                      <li>LinkedIn profiles of founding team</li>
+                      <li>Current user/customer metrics (if any)</li>
+                      <li>Target market analysis for US</li>
+                    </ul>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Selection Criteria</h4>
+                    <ul className={styles.criteriaList}>
+                      <li>Product potential for viral growth</li>
+                      <li>Team&apos;s execution capability</li>
+                      <li>Market opportunity in the US</li>
+                      <li>Founder coachability</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={styles.trackDetailFooter}>
+                  <Button href="#apply" variant="primary">Apply to Launchpad</Button>
                 </div>
               </div>
-              <div className={styles.cohortCard}>
-                <div className={styles.cohortBadge}>August 2026</div>
-                <h3 className={styles.cohortTitle}>Deep Tech & Product Velocity</h3>
-                <p className={styles.cohortDescription}>
-                  Tailored for deep-tech and longer cycle startups. This cohort uses the quiet winter months to build product velocity, emerging in early Spring 2027 ready to dominate the market.
-                </p>
-                <div className={styles.cohortDetails}>
-                  <p><strong>Applications Open:</strong> Early 2026</p>
-                  <p><strong>Program Start:</strong> August 2026</p>
-                  <p><strong>Graduation:</strong> Spring 2027</p>
+
+              {/* Track 2 */}
+              <div className={styles.trackDetailCard}>
+                <div className={styles.trackDetailHeader}>
+                  <span className={styles.trackLabel}>Track 2</span>
+                  <h3 className={styles.trackDetailTitle}>ProductLab</h3>
+                  <p className={styles.trackDuration}>12 Weeks • Quarterly Cohorts</p>
+                </div>
+                <div className={styles.trackDetailBody}>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Who Should Apply</h4>
+                    <p className={styles.detailText}>
+                      Technical founders who have built a working product but need Silicon Valley-standard 
+                      technical validation to pass VC due diligence. Perfect for teams with strong 
+                      engineering backgrounds seeking enterprise credibility.
+                    </p>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Application Requirements</h4>
+                    <ul className={styles.requirementList}>
+                      <li>Live product with active users</li>
+                      <li>Technical architecture documentation</li>
+                      <li>GitHub/GitLab repository access (for review)</li>
+                      <li>Technical team bios and backgrounds</li>
+                      <li>Current MRR/ARR and growth metrics</li>
+                      <li>5-minute technical demo video</li>
+                    </ul>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Selection Criteria</h4>
+                    <ul className={styles.criteriaList}>
+                      <li>Technical innovation and complexity</li>
+                      <li>Scalability potential of architecture</li>
+                      <li>Team&apos;s technical depth</li>
+                      <li>Product-market fit signals</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={styles.trackDetailFooter}>
+                  <Button href="#apply" variant="primary">Apply to ProductLab</Button>
+                </div>
+              </div>
+
+              {/* Track 3 */}
+              <div className={styles.trackDetailCard}>
+                <div className={styles.trackDetailHeader}>
+                  <span className={styles.trackLabel}>Track 3</span>
+                  <h3 className={styles.trackDetailTitle}>Pitch & Win</h3>
+                  <p className={styles.trackDuration}>6 Weeks • Q1 & Q3</p>
+                </div>
+                <div className={styles.trackDetailBody}>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Who Should Apply</h4>
+                    <p className={styles.detailText}>
+                      Investment-ready founders who have proven traction and are ready to raise from 
+                      US VCs. This track is for founders who need pitch refinement, VC introductions, 
+                      and a platform to showcase their startup to Silicon Valley investors.
+                    </p>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Application Requirements</h4>
+                    <ul className={styles.requirementList}>
+                      <li>$100K+ ARR or equivalent strong metrics</li>
+                      <li>Current pitch deck (10-15 slides)</li>
+                      <li>Financial model with projections</li>
+                      <li>Cap table and current investors</li>
+                      <li>Clear US market expansion strategy</li>
+                      <li>3-minute pitch video</li>
+                    </ul>
+                  </div>
+                  <div className={styles.detailSection}>
+                    <h4 className={styles.detailHeading}>Selection Criteria</h4>
+                    <ul className={styles.criteriaList}>
+                      <li>Demonstrated product-market fit</li>
+                      <li>Strong unit economics</li>
+                      <li>Compelling founder narrative</li>
+                      <li>Readiness for institutional investment</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className={styles.trackDetailFooter}>
+                  <Button href="#apply" variant="primary">Apply to Pitch & Win</Button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Application Process */}
+        {/* Application Timeline */}
         <section className="section">
           <div className="container">
-            <div className={styles.contentBlock}>
-              <h2 className={styles.sectionHeading}>Application Process</h2>
-              <p className={styles.narrative}>
-                Our application is rigorous by design. We ask you to detail not just your victories, but your "near-death" moments. We require a video introduction because we need to feel your energy and your command of English—the lingua franca of global business. Expect a multi-stage interview process where we challenge your assumptions about the US market. We accept less than 2% of applicants because we dedicate 100% of our resources to those who make the cut.
-              </p>
+            <h2 className="section-title">Application Timeline</h2>
+            <p className={styles.introText}>
+              Our rolling admissions process is designed for speed. 
+              We respect your time and aim to provide decisions quickly.
+            </p>
+            <div className={styles.timelineGrid}>
+              <div className={styles.timelineStep}>
+                <div className={styles.stepNumber}>1</div>
+                <h3 className={styles.stepTitle}>Submit Application</h3>
+                <p className={styles.stepDescription}>
+                  Complete the online application with all required materials. 
+                  Save progress and return anytime before final submission.
+                </p>
+                <span className={styles.stepDuration}>Day 1</span>
+              </div>
+              <div className={styles.timelineStep}>
+                <div className={styles.stepNumber}>2</div>
+                <h3 className={styles.stepTitle}>Initial Review</h3>
+                <p className={styles.stepDescription}>
+                  Our team reviews your application and supporting materials. 
+                  We assess fit for your selected track.
+                </p>
+                <span className={styles.stepDuration}>5-7 days</span>
+              </div>
+              <div className={styles.timelineStep}>
+                <div className={styles.stepNumber}>3</div>
+                <h3 className={styles.stepTitle}>Video Interview</h3>
+                <p className={styles.stepDescription}>
+                  30-minute video call with program directors to discuss your 
+                  vision, challenges, and fit for the program.
+                </p>
+                <span className={styles.stepDuration}>Week 2</span>
+              </div>
+              <div className={styles.timelineStep}>
+                <div className={styles.stepNumber}>4</div>
+                <h3 className={styles.stepTitle}>Final Decision</h3>
+                <p className={styles.stepDescription}>
+                  Receive your admission decision along with program details, 
+                  start dates, and onboarding materials.
+                </p>
+                <span className={styles.stepDuration}>Week 3</span>
+              </div>
             </div>
           </div>
         </section>
@@ -84,7 +281,8 @@ export default function Admissions() {
             <h2 className="section-title">Application Portal</h2>
             <div className={styles.applicationBox}>
               <p className={styles.applicationNote}>
-                The Bridge Application Portal handles complex international data with save-progress capability, video pitch upload, and LinkedIn integration.
+                Our application portal handles complex international data with save-progress capability, 
+                video pitch upload, and LinkedIn integration.
               </p>
               <div className={styles.applicationForm}>
                 <div className={styles.formNote}>
@@ -92,6 +290,9 @@ export default function Admissions() {
                   <a href="mailto:apply@seattleventurelabs.com" className={styles.emailLink}>
                     apply@seattleventurelabs.com
                   </a>
+                  <p className={styles.emailNote}>
+                    Include your track preference (Launchpad, ProductLab, or Pitch & Win) in your email.
+                  </p>
                 </div>
               </div>
             </div>
@@ -104,27 +305,49 @@ export default function Admissions() {
             <h2 className="section-title">Frequently Asked Questions</h2>
             <div className={styles.faqGrid}>
               <div className={styles.faqItem}>
-                <h3 className={styles.faqQuestion}>What are the investment terms?</h3>
+                <h3 className={styles.faqQuestion}>Can I apply to multiple tracks?</h3>
                 <p className={styles.faqAnswer}>
-                  We invest $150K-$250K in exchange for equity, typically 5-7% of the company. Terms are standardized to ensure fairness and speed.
+                  Yes, you can apply to multiple tracks if you meet the prerequisites for each. 
+                  We&apos;ll help you determine the best fit during the interview process. Some founders 
+                  complete one track and later enroll in another.
                 </p>
               </div>
               <div className={styles.faqItem}>
-                <h3 className={styles.faqQuestion}>Do I need to relocate to Seattle?</h3>
+                <h3 className={styles.faqQuestion}>What are the program fees?</h3>
                 <p className={styles.faqAnswer}>
-                  While we expect significant time on the ground in Seattle during the program, we understand the complexities of international relocation. We work with founders on a case-by-case basis.
+                  Program fees vary by track and are designed to be founder-friendly. 
+                  Contact our admissions team for detailed pricing and available payment plans.
                 </p>
               </div>
               <div className={styles.faqItem}>
-                <h3 className={styles.faqQuestion}>What if I'm already incorporated in the US?</h3>
+                <h3 className={styles.faqQuestion}>Do I need to relocate?</h3>
                 <p className={styles.faqAnswer}>
-                  If you already have a US entity, we'll work with your existing structure and focus on the cultural and market immersion aspects of the program.
+                  Launchpad can be completed remotely with periodic in-person sessions. 
+                  ProductLab requires significant time in Seattle. Pitch & Win includes 
+                  mandatory Demo Day attendance in Silicon Valley.
                 </p>
               </div>
               <div className={styles.faqItem}>
-                <h3 className={styles.faqQuestion}>How long does the application process take?</h3>
+                <h3 className={styles.faqQuestion}>What about visa support?</h3>
                 <p className={styles.faqAnswer}>
-                  The full process typically takes 4-6 weeks from initial application to final decision, including multiple interview rounds and reference checks.
+                  We provide guidance on B1/B2 visas for short-term program attendance 
+                  and can assist with O-1 visa applications for founders planning longer US stays.
+                </p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>Is there investment included?</h3>
+                <p className={styles.faqAnswer}>
+                  Investment is not automatic with program enrollment. However, Pitch & Win 
+                  graduates have direct access to our VC network, and top performers across 
+                  all tracks are introduced to relevant investors.
+                </p>
+              </div>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>What happens after the program?</h3>
+                <p className={styles.faqAnswer}>
+                  All graduates gain lifetime access to our alumni network, partner resources, 
+                  and community events. You remain part of the Seattle Venture Labs ecosystem 
+                  long after completing your track.
                 </p>
               </div>
             </div>
@@ -135,9 +358,10 @@ export default function Admissions() {
         <section className="section section-gray">
           <div className="container">
             <div className={styles.cta}>
-              <h2 className={styles.ctaTitle}>Ready to Apply?</h2>
+              <h2 className={styles.ctaTitle}>Ready to Start Your Journey?</h2>
               <p className={styles.ctaDescription}>
-                Join the next generation of international founders building in America.
+                Join the next generation of international founders building in America. 
+                Choose your track and apply today.
               </p>
               <a href="mailto:apply@seattleventurelabs.com" className={styles.ctaButton}>
                 Contact Admissions
@@ -150,4 +374,3 @@ export default function Admissions() {
     </>
   )
 }
-

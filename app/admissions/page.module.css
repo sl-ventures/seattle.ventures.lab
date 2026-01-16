@@ -18,6 +18,14 @@
   color: var(--color-gray-600);
 }
 
+.introText {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-12);
+}
+
 .contentBlock {
   max-width: 900px;
   margin: 0 auto;
@@ -36,6 +44,385 @@
   line-height: var(--line-height-relaxed);
 }
 
+/* Track Comparison Table */
+.trackComparisonTable {
+  overflow-x: auto;
+  margin-top: var(--space-8);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  min-width: 800px;
+}
+
+.comparisonTable thead {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.comparisonTable th {
+  padding: var(--space-4) var(--space-3);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparisonTable td {
+  padding: var(--space-5) var(--space-3);
+  border-bottom: 1px solid var(--color-gray-200);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  vertical-align: top;
+}
+
+.comparisonTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparisonTable tbody tr:hover {
+  background: var(--color-gray-50);
+}
+
+.trackName {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+}
+
+.trackBadge {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-1);
+}
+
+.prerequisiteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prerequisiteList li {
+  padding: var(--space-1) 0;
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.prerequisiteList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* Track Detail Cards */
+.trackDetailGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.trackDetailCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.trackDetailCard:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
+}
+
+.trackDetailHeader {
+  padding: var(--space-6);
+  background: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-200);
+  text-align: center;
+}
+
+.trackLabel {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-2);
+}
+
+.trackDetailTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-2);
+}
+
+.trackDuration {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.trackDetailBody {
+  padding: var(--space-6);
+  flex: 1;
+}
+
+.detailSection {
+  margin-bottom: var(--space-6);
+}
+
+.detailSection:last-child {
+  margin-bottom: 0;
+}
+
+.detailHeading {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+}
+
+.detailText {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+.requirementList,
+.criteriaList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementList li,
+.criteriaList li {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  padding: var(--space-2) 0;
+  padding-left: var(--space-5);
+  position: relative;
+  line-height: var(--line-height-normal);
+}
+
+.requirementList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.criteriaList li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.trackDetailFooter {
+  padding: var(--space-6);
+  padding-top: 0;
+  text-align: center;
+}
+
+/* Timeline */
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.timelineStep {
+  text-align: center;
+  position: relative;
+}
+
+.timelineStep::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -24px;
+  width: 48px;
+  height: 2px;
+  background: var(--color-gray-300);
+}
+
+.timelineStep:last-child::after {
+  display: none;
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0 auto var(--space-4);
+}
+
+.stepTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+}
+
+.stepDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-3);
+}
+
+.stepDuration {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  background: var(--color-gray-100);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+}
+
+/* Application Box */
+.applicationBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.applicationNote {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-600);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.applicationForm {
+  padding: var(--space-12);
+  background: var(--color-white);
+  border: 2px dashed var(--color-gray-300);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.formNote {
+  color: var(--color-gray-600);
+}
+
+.formNote p {
+  margin-bottom: var(--space-4);
+}
+
+.emailLink {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.emailNote {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  font-style: italic;
+}
+
+/* FAQ */
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  padding: var(--space-6);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.faqItem:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.faqQuestion {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+}
+
+.faqAnswer {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.ctaDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-8);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.ctaButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+/* Legacy styles for cohort cards */
 .scheduleIntro {
   text-align: center;
   font-size: var(--font-size-lg);
@@ -99,108 +486,36 @@
   margin-bottom: var(--space-2);
 }
 
-.applicationBox {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.applicationNote {
-  font-size: var(--font-size-base);
-  color: var(--color-gray-600);
-  text-align: center;
-  margin-bottom: var(--space-8);
-}
-
-.applicationForm {
-  padding: var(--space-12);
-  background: var(--color-white);
-  border: 2px dashed var(--color-gray-300);
-  border-radius: var(--radius-lg);
-  text-align: center;
-}
-
-.formNote {
-  color: var(--color-gray-600);
-}
-
-.formNote p {
-  margin-bottom: var(--space-4);
-}
-
-.emailLink {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-primary);
-}
-
-.faqGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-8);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.faqItem {
-  padding: var(--space-6);
-  background: var(--color-white);
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--radius-lg);
-}
-
-.faqQuestion {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-black);
-  margin-bottom: var(--space-4);
-}
-
-.faqAnswer {
-  font-size: var(--font-size-base);
-  color: var(--color-gray-600);
-  line-height: var(--line-height-relaxed);
-}
-
-.cta {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.ctaTitle {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-black);
-  margin-bottom: var(--space-4);
-}
-
-.ctaDescription {
-  font-size: var(--font-size-lg);
-  color: var(--color-gray-600);
-  margin-bottom: var(--space-8);
-}
-
-.ctaButton {
-  display: inline-block;
-  padding: var(--space-3) var(--space-6);
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
-}
-
-.ctaButton:hover {
-  background: var(--color-primary-dark);
-  transform: translateY(-2px);
-  color: var(--color-white);
-}
-
-@media (max-width: 768px) {
-  .cohortGrid,
-  .faqGrid {
+/* Responsive */
+@media (max-width: 1024px) {
+  .trackDetailGrid {
     grid-template-columns: 1fr;
+  }
+
+  .timelineGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .timelineStep::after {
+    display: none;
   }
 }
 
+@media (max-width: 768px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cohortGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparisonTable {
+    font-size: var(--font-size-xs);
+  }
+}
