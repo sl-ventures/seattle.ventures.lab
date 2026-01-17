@@ -226,45 +226,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Portfolio Highlights */}
-        <section className="section section-gray">
-          <div className="container">
-            <h2 className="section-title">Portfolio Highlights</h2>
-            <div className={styles.portfolioGrid}>
-              <div className={styles.portfolioCard}>
-                <div className={styles.portfolioPlaceholder}>
-                  <span>Company Logo</span>
-                </div>
-                <h3 className={styles.portfolioTitle}>From Seoul to Seattle</h3>
-                <p className={styles.portfolioDescription}>
-                  $2M Seed Secured • B2B SaaS • Enterprise Focus
-                </p>
-              </div>
-              <div className={styles.portfolioCard}>
-                <div className={styles.portfolioPlaceholder}>
-                  <span>Company Logo</span>
-                </div>
-                <h3 className={styles.portfolioTitle}>From London to Los Angeles</h3>
-                <p className={styles.portfolioDescription}>
-                  $3.5M Series A • Deep Tech • Healthcare Innovation
-                </p>
-              </div>
-              <div className={styles.portfolioCard}>
-                <div className={styles.portfolioPlaceholder}>
-                  <span>Company Logo</span>
-                </div>
-                <h3 className={styles.portfolioTitle}>From Berlin to Boston</h3>
-                <p className={styles.portfolioDescription}>
-                  $1.8M Seed • Logistics Tech • Supply Chain Solutions
-                </p>
-              </div>
-            </div>
-            <div className={styles.portfolioActions}>
-              <Button href="/portfolio" variant="secondary" arrow>View Full Portfolio</Button>
-            </div>
-          </div>
-        </section>
-
         {/* The Bridge Model - 3 Tracks */}
         <section className="section">
           <div className="container">

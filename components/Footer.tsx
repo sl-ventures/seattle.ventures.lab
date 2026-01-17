@@ -15,14 +15,14 @@ export default function Footer() {
           </div>
           <div className={styles.footerNav}>
             <h4 className={styles.footerHeading}>Program</h4>
-            <Link href="/program" className={styles.footerLink}>The Model</Link>
-            <Link href="/program#curriculum" className={styles.footerLink}>Curriculum</Link>
-            <Link href="/program#mentorship" className={styles.footerLink}>Mentorship</Link>
+            <Link href="/program" className={styles.footerLink}>Overview</Link>
+            <Link href="/program#track-1" className={styles.footerLink}>Launchpad</Link>
+            <Link href="/program#track-2" className={styles.footerLink}>ProductLab</Link>
+            <Link href="/program#track-3" className={styles.footerLink}>Pitch & Win</Link>
           </div>
           <div className={styles.footerNav}>
             <h4 className={styles.footerHeading}>Resources</h4>
             <Link href="/admissions" className={styles.footerLink}>Apply</Link>
-            <Link href="/portfolio" className={styles.footerLink}>Portfolio</Link>
             <Link href="/partners" className={styles.footerLink}>Partners</Link>
             <Link href="/community" className={styles.footerLink}>Community</Link>
           </div>

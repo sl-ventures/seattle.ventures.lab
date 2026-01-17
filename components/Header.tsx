@@ -26,7 +26,6 @@ export default function Header() {
           <ul className={styles.navLinks}>
             <li><Link href="/program" className={styles.navLink}>Program</Link></li>
             <li><Link href="/admissions" className={styles.navLink}>Admissions</Link></li>
-            <li><Link href="/portfolio" className={styles.navLink}>Portfolio</Link></li>
             <li><Link href="/partners" className={styles.navLink}>Partners</Link></li>
             <li><Link href="/community" className={styles.navLink}>Community</Link></li>
             <li><Link href="/about" className={styles.navLink}>About</Link></li>
@@ -48,7 +47,6 @@ export default function Header() {
           <div className={styles.mobileMenu}>
             <Link href="/program" onClick={() => setMobileMenuOpen(false)}>Program</Link>
             <Link href="/admissions" onClick={() => setMobileMenuOpen(false)}>Admissions</Link>
-            <Link href="/portfolio" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
             <Link href="/partners" onClick={() => setMobileMenuOpen(false)}>Partners</Link>
             <Link href="/community" onClick={() => setMobileMenuOpen(false)}>Community</Link>
             <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
