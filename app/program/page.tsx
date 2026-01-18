@@ -24,9 +24,9 @@ export default function Program() {
             <div className={styles.contentBlock}>
               <h2 className={styles.sectionHeading}>Program Overview</h2>
               <p className={styles.narrative}>
-                Each track is designed to address a specific challenge in your journey to US market success. 
-                Whether you need market validation, technical credibility, or capital injection, 
-                we have a structured program to get you there—backed by our Silicon Valley partner network.
+                Each track addresses a specific barrier international founders face when entering the US market. 
+                Our methodology: build your US operations from Seattle (40% lower cost than Bay Area, world-class enterprise talent), 
+                validate with our Pacific Northwest and California partner network, then access Silicon Valley capital when you're ready.
               </p>
               <div className={styles.tracksTable}>
                 <table className={styles.programTable}>
@@ -35,7 +35,7 @@ export default function Program() {
                       <th>Track</th>
                       <th>Program</th>
                       <th>Duration</th>
-                      <th>Objective</th>
+                      <th>Time Commitment</th>
                       <th>Deliverable</th>
                     </tr>
                   </thead>
@@ -44,22 +44,22 @@ export default function Program() {
                       <td>Track 1</td>
                       <td>Launchpad</td>
                       <td>8 weeks</td>
-                      <td>Market Validation</td>
-                      <td>10,000+ users via SNS/Video</td>
+                      <td>15-20 hrs/week</td>
+                      <td>B2C: 10K+ users | B2B: 3-5 pilot LOIs</td>
                     </tr>
                     <tr>
                       <td>Track 2</td>
                       <td>ProductLab</td>
                       <td>12 weeks</td>
-                      <td>Technical Integrity</td>
-                      <td>PoC & SV Engineering Audit</td>
+                      <td>20-25 hrs/week</td>
+                      <td>Technical audit + Enterprise-grade PoC</td>
                     </tr>
                     <tr>
                       <td>Track 3</td>
                       <td>Pitch & Win</td>
                       <td>6 weeks</td>
-                      <td>Capital Injection</td>
-                      <td>Demo Day + Private VC Room</td>
+                      <td>10-15 hrs/week</td>
+                      <td>Demo Day + 10+ investor meetings</td>
                     </tr>
                   </tbody>
                 </table>
@@ -86,10 +86,15 @@ export default function Program() {
                 <div className={styles.trackDescription}>
                   <h3 className={styles.subHeading}>What You&apos;ll Achieve</h3>
                   <p className={styles.narrative}>
-                    Transform your product into a viral sensation. This intensive 8-week sprint focuses on 
-                    acquiring your first 10,000+ users through strategic SNS campaigns and viral video content. 
-                    Top performers are fast-tracked to the AI Summit stage at Plug and Play Tech Center 
-                    for immediate market exposure to Silicon Valley&apos;s top investors and corporates.
+                    Validate US market demand through structured go-to-market execution. This 8-week sprint 
+                    (15-20 hours/week commitment) follows different paths based on your business model:
+                  </p>
+                  <ul className={styles.pathList}>
+                    <li><strong>B2C Founders:</strong> Build an engaged US audience of 10,000+ users through content marketing, influencer partnerships, and community building.</li>
+                    <li><strong>B2B Founders:</strong> Secure 3-5 qualified enterprise pilot conversations with US companies, including warm introductions through our Seattle enterprise network (Microsoft, Amazon ecosystem partners).</li>
+                  </ul>
+                  <p className={styles.narrative}>
+                    Top performers across both paths earn a showcase opportunity at Plug and Play Tech Center&apos;s AI Summit.
                   </p>
                 </div>
 
@@ -97,52 +102,52 @@ export default function Program() {
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 1-2</span>
-                      <h4 className={styles.weekTitle}>Market Research & ICP Definition</h4>
+                      <h4 className={styles.weekTitle}>US Market Deep-Dive & ICP Definition</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Deep-dive into US market dynamics and competitor analysis</li>
-                      <li>Define your Ideal Customer Profile (ICP) for the American market</li>
-                      <li>Identify viral content opportunities in your niche</li>
-                      <li>Set up analytics and tracking infrastructure</li>
+                      <li>Comprehensive US market analysis with competitive positioning</li>
+                      <li>Define Ideal Customer Profile (ICP) tailored to American buyers</li>
+                      <li>B2C: Identify content channels and viral opportunities</li>
+                      <li>B2B: Map target accounts and decision-maker personas</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 3-4</span>
-                      <h4 className={styles.weekTitle}>Content Strategy & SNS Campaign Setup</h4>
+                      <h4 className={styles.weekTitle}>Channel Strategy & Outreach Setup</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Develop platform-specific content strategies (TikTok, Instagram, YouTube)</li>
-                      <li>Create content calendar with viral hooks and trends</li>
-                      <li>Set up paid campaign infrastructure and A/B testing frameworks</li>
-                      <li>Influencer outreach and partnership development</li>
+                      <li>B2C: Platform strategies for TikTok, Instagram, YouTube</li>
+                      <li>B2B: LinkedIn outreach sequences and email campaigns</li>
+                      <li>Set up tracking, attribution, and CRM infrastructure</li>
+                      <li>Develop messaging that resonates with US audiences</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 5-6</span>
-                      <h4 className={styles.weekTitle}>Viral Video Production</h4>
+                      <h4 className={styles.weekTitle}>Content Production & Warm Introductions</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Professional video production for TikTok, YouTube Shorts, Instagram Reels</li>
-                      <li>Hook optimization and engagement maximization techniques</li>
-                      <li>User-generated content (UGC) campaign launch</li>
-                      <li>Cross-platform content adaptation and distribution</li>
+                      <li>B2C: Video production and influencer partnership execution</li>
+                      <li>B2B: Partner-facilitated introductions to target accounts</li>
+                      <li>Weekly pipeline reviews with SVL mentors</li>
+                      <li>Iterate messaging based on early response data</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 7-8</span>
-                      <h4 className={styles.weekTitle}>Campaign Execution & User Acquisition</h4>
+                      <h4 className={styles.weekTitle}>Execution Sprint & Results Documentation</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Full-scale campaign launch across all platforms</li>
-                      <li>Real-time optimization based on performance data</li>
-                      <li>Community building and engagement automation</li>
-                      <li>Conversion funnel optimization and retention strategies</li>
+                      <li>B2C: Full campaign launch with real-time optimization</li>
+                      <li>B2B: Close pilot conversations and secure LOIs</li>
+                      <li>Document learnings and build repeatable playbook</li>
+                      <li>Prepare investor-ready traction narrative</li>
                     </ul>
                   </div>
                 </div>
@@ -150,15 +155,15 @@ export default function Program() {
                 <div className={styles.trackOutcome}>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Deliverable</h4>
-                    <p className={styles.outcomeText}>10,000+ users/followers via organic and paid SNS campaigns</p>
+                    <p className={styles.outcomeText}>B2C: 10K+ users | B2B: 3-5 pilot LOIs + GTM playbook</p>
                   </div>
                   <div className={styles.outcomeCard}>
-                    <h4 className={styles.outcomeTitle}>Partner Integration</h4>
-                    <p className={styles.outcomeText}>Top performers fast-tracked to AI Summit stage at Plug and Play Tech Center</p>
+                    <h4 className={styles.outcomeTitle}>Seattle Advantage</h4>
+                    <p className={styles.outcomeText}>Access to Microsoft/Amazon ecosystem partners for B2B pilots; PNW tech community for early adopters</p>
                   </div>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Mentors</h4>
-                    <p className={styles.outcomeText}>Growth hackers, Content creators, Digital marketing experts from leading US agencies</p>
+                    <p className={styles.outcomeText}>Growth marketers, Enterprise sales leaders, Seattle-based BD executives from Fortune 500 tech</p>
                   </div>
                 </div>
               </div>
@@ -184,11 +189,11 @@ export default function Program() {
                 <div className={styles.trackDescription}>
                   <h3 className={styles.subHeading}>What You&apos;ll Achieve</h3>
                   <p className={styles.narrative}>
-                    Validate your technology to Silicon Valley standards. This 12-week intensive program 
-                    pairs you with ex-FAANG engineers and product managers from unicorn startups to 
-                    build a production-ready Proof of Concept that passes the rigorous technical due diligence 
-                    of top-tier VCs. Leverage UW CoMotion Labs resources and validate locally through 
-                    the Los Altos and Blaine business ecosystems.
+                    Achieve technical credibility that passes US VC due diligence. This 12-week program 
+                    (20-25 hours/week commitment) connects you with Seattle&apos;s enterprise engineering talent—
+                    the same teams that built AWS, Azure, and enterprise platforms at Microsoft and Amazon. 
+                    You&apos;ll produce investor-ready technical documentation and an architecture review that 
+                    demonstrates enterprise-grade scalability.
                   </p>
                 </div>
 
@@ -196,39 +201,39 @@ export default function Program() {
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 1-4</span>
-                      <h4 className={styles.weekTitle}>Technical Architecture Review & PoC Development</h4>
+                      <h4 className={styles.weekTitle}>Technical Architecture Assessment</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Comprehensive technical architecture assessment</li>
-                      <li>Scalability and security audit by SV engineers</li>
-                      <li>PoC scope definition with clear success metrics</li>
-                      <li>Development sprint planning and milestone setting</li>
+                      <li>Comprehensive architecture review by Seattle enterprise engineers</li>
+                      <li>Scalability, security, and performance audit</li>
+                      <li>Gap analysis vs. enterprise/VC technical expectations</li>
+                      <li>PoC scope definition with measurable success criteria</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 5-8</span>
-                      <h4 className={styles.weekTitle}>SV Engineering Audit</h4>
+                      <h4 className={styles.weekTitle}>Enterprise-Grade Development</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Code review sessions with Silicon Valley PMs and Engineers</li>
-                      <li>Performance optimization and technical debt reduction</li>
+                      <li>Weekly code reviews with AWS/Microsoft engineering alumni</li>
                       <li>Cloud infrastructure optimization (AWS/GCP/Azure)</li>
-                      <li>API design and documentation to enterprise standards</li>
+                      <li>API design and documentation to Fortune 500 standards</li>
+                      <li>Performance optimization and technical debt reduction</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 9-12</span>
-                      <h4 className={styles.weekTitle}>Product Iteration & Market Validation</h4>
+                      <h4 className={styles.weekTitle}>Validation & Documentation</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Beta testing with pilot customers in Los Altos ecosystem</li>
-                      <li>Feedback integration and rapid iteration cycles</li>
-                      <li>Technical documentation for investor due diligence</li>
-                      <li>Production readiness certification</li>
+                      <li>Beta testing with pilot customers in Seattle tech ecosystem</li>
+                      <li>Prepare technical documentation for investor due diligence</li>
+                      <li>Architecture decision records and scalability roadmap</li>
+                      <li>Production readiness certification from mentor panel</li>
                     </ul>
                   </div>
                 </div>
@@ -236,15 +241,15 @@ export default function Program() {
                 <div className={styles.trackOutcome}>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Deliverable</h4>
-                    <p className={styles.outcomeText}>Production-ready PoC with SV-standard technical documentation</p>
+                    <p className={styles.outcomeText}>Enterprise-grade PoC + Technical due diligence package</p>
                   </div>
                   <div className={styles.outcomeCard}>
-                    <h4 className={styles.outcomeTitle}>Partner Integration</h4>
-                    <p className={styles.outcomeText}>UW CoMotion Labs / Startup Hall for technical resources; Los Altos & Blaine business ecosystem for local validation</p>
+                    <h4 className={styles.outcomeTitle}>Seattle Advantage</h4>
+                    <p className={styles.outcomeText}>Access to UW CoMotion Labs; mentorship from AWS/Microsoft/Amazon engineering leadership</p>
                   </div>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Mentors</h4>
-                    <p className={styles.outcomeText}>Ex-FAANG engineers, Product managers from unicorn startups (Stripe, Airbnb, Uber alumni)</p>
+                    <p className={styles.outcomeText}>Senior engineers from AWS, Microsoft, Stripe, Airbnb; Enterprise architects with Fortune 500 experience</p>
                   </div>
                 </div>
               </div>
@@ -356,29 +361,43 @@ export default function Program() {
           <div className="container">
             <h2 className="section-title">Our Partner Network</h2>
             <p className={styles.partnerIntro}>
-              Every track is powered by our curated network of Silicon Valley partners, 
-              ensuring you get real-world exposure and connections that matter.
+              Build in Seattle, validate in the Pacific Northwest, then access Silicon Valley capital. 
+              Our dual-region partner network gives you the best of both ecosystems.
             </p>
             <div className={styles.partnerGrid}>
               <div className={styles.partnerCard}>
+                <h3 className={styles.partnerName}>UW CoMotion Labs</h3>
+                <p className={styles.partnerDescription}>
+                  Seattle&apos;s premier startup incubator at Startup Hall. Technical resources, 
+                  lab space, and connections to University of Washington research talent.
+                </p>
+              </div>
+              <div className={styles.partnerCard}>
+                <h3 className={styles.partnerName}>Seattle Enterprise Network</h3>
+                <p className={styles.partnerDescription}>
+                  Access to Microsoft, Amazon, and 500+ cloud-first enterprises for pilot 
+                  opportunities, partnerships, and B2B validation in the enterprise capital of tech.
+                </p>
+              </div>
+              <div className={styles.partnerCard}>
                 <h3 className={styles.partnerName}>Plug and Play Tech Center</h3>
                 <p className={styles.partnerDescription}>
-                  World&apos;s largest startup accelerator platform. Access to Silicon Valley Summits, 
-                  corporate partnerships, and the AI Summit stage for top performers.
+                  World&apos;s largest startup accelerator platform. Silicon Valley Summits, 
+                  corporate partnerships, and AI Summit stage for top performers.
                 </p>
               </div>
               <div className={styles.partnerCard}>
                 <h3 className={styles.partnerName}>Think Tank VC</h3>
                 <p className={styles.partnerDescription}>
-                  Menlo Park venture hub just 1 mile from Stanford. Direct access to 100+ VCs 
-                  and flagship events like The Venture Revolution.
+                  Menlo Park venture hub near Stanford with 100+ VCs. 
+                  Direct access through flagship events like The Venture Revolution.
                 </p>
               </div>
               <div className={styles.partnerCard}>
                 <h3 className={styles.partnerName}>Graphene Ventures</h3>
                 <p className={styles.partnerDescription}>
                   Palo Alto-based VC with portfolio including Lyft and Snapchat. 
-                  Focus on early-stage tech across enterprise software and consumer technology.
+                  Early-stage focus on enterprise software and consumer technology.
                 </p>
               </div>
               <div className={styles.partnerCard}>
@@ -386,20 +405,6 @@ export default function Program() {
                 <p className={styles.partnerDescription}>
                   Global pitch competition across 60+ countries with $1M investment prize. 
                   Regional winners compete at the Grand Finale in San Francisco.
-                </p>
-              </div>
-              <div className={styles.partnerCard}>
-                <h3 className={styles.partnerName}>UW CoMotion Labs</h3>
-                <p className={styles.partnerDescription}>
-                  Seattle&apos;s premier startup incubator at Startup Hall. Multi-industry labs 
-                  for Software, Biotech, Medtech, IT, and Fintech startups.
-                </p>
-              </div>
-              <div className={styles.partnerCard}>
-                <h3 className={styles.partnerName}>Los Altos Chamber of Commerce</h3>
-                <p className={styles.partnerDescription}>
-                  Heart of Silicon Valley business community. Local validation opportunities 
-                  and connections to established enterprises in the Bay Area.
                 </p>
               </div>
             </div>

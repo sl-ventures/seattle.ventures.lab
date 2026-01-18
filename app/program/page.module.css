@@ -121,6 +121,33 @@
   margin-bottom: var(--space-4);
 }
 
+.pathList {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-6) auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.pathList li {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  line-height: var(--line-height-relaxed);
+  padding: var(--space-4);
+  background: var(--color-gray-50);
+  border-left: 3px solid var(--color-primary);
+  margin-bottom: var(--space-3);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.pathList li:last-child {
+  margin-bottom: 0;
+}
+
+.pathList li strong {
+  color: var(--color-black);
+}
+
 /* Curriculum Grid */
 .curriculumGrid {
   display: grid;

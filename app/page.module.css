@@ -195,6 +195,15 @@
   animation: fadeIn 0.5s ease-out 1.5s forwards;
 }
 
+.sectionIntro {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-12);
+  line-height: var(--line-height-relaxed);
+}
+
 .valueGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

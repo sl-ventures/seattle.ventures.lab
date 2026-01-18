@@ -53,7 +53,7 @@ export default function Admissions() {
                       </ul>
                     </td>
                     <td>8 weeks</td>
-                    <td>Monthly</td>
+                    <td>Feb 3, Mar 3, Apr 7, May 5, Jun 2, Jul 7, Aug 4, Sep 1, Oct 6, Nov 3, Dec 1</td>
                   </tr>
                   <tr>
                     <td className={styles.trackName}>
@@ -69,7 +69,7 @@ export default function Admissions() {
                       </ul>
                     </td>
                     <td>12 weeks</td>
-                    <td>Quarterly</td>
+                    <td>Jan 13, Apr 6, Jul 6, Oct 5</td>
                   </tr>
                   <tr>
                     <td className={styles.trackName}>
@@ -85,7 +85,7 @@ export default function Admissions() {
                       </ul>
                     </td>
                     <td>6 weeks</td>
-                    <td>Q1, Q3</td>
+                    <td>Feb 10, Sep 7</td>
                   </tr>
                 </tbody>
               </table>
@@ -103,7 +103,7 @@ export default function Admissions() {
                 <div className={styles.trackDetailHeader}>
                   <span className={styles.trackLabel}>Track 1</span>
                   <h3 className={styles.trackDetailTitle}>Launchpad</h3>
-                  <p className={styles.trackDuration}>8 Weeks • Monthly Cohorts</p>
+                  <p className={styles.trackDuration}>8 Weeks • Next Cohort: Feb 3, 2026</p>
                 </div>
                 <div className={styles.trackDetailBody}>
                   <div className={styles.detailSection}>
@@ -144,7 +144,7 @@ export default function Admissions() {
                 <div className={styles.trackDetailHeader}>
                   <span className={styles.trackLabel}>Track 2</span>
                   <h3 className={styles.trackDetailTitle}>ProductLab</h3>
-                  <p className={styles.trackDuration}>12 Weeks • Quarterly Cohorts</p>
+                  <p className={styles.trackDuration}>12 Weeks • Next Cohort: Apr 6, 2026</p>
                 </div>
                 <div className={styles.trackDetailBody}>
                   <div className={styles.detailSection}>
@@ -186,7 +186,7 @@ export default function Admissions() {
                 <div className={styles.trackDetailHeader}>
                   <span className={styles.trackLabel}>Track 3</span>
                   <h3 className={styles.trackDetailTitle}>Pitch & Win</h3>
-                  <p className={styles.trackDuration}>6 Weeks • Q1 & Q3</p>
+                  <p className={styles.trackDuration}>6 Weeks • Next Cohort: Feb 10, 2026</p>
                 </div>
                 <div className={styles.trackDetailBody}>
                   <div className={styles.detailSection}>
@@ -281,17 +281,24 @@ export default function Admissions() {
             <h2 className="section-title">Application Portal</h2>
             <div className={styles.applicationBox}>
               <p className={styles.applicationNote}>
-                Our application portal handles complex international data with save-progress capability, 
-                video pitch upload, and LinkedIn integration.
+                Ready to take the first step? Book a 15-minute discovery call with our admissions team to discuss 
+                which track is right for you and get your questions answered.
               </p>
               <div className={styles.applicationForm}>
                 <div className={styles.formNote}>
-                  <p>Application portal coming soon. For now, please contact us at:</p>
-                  <a href="mailto:apply@seattleventurelabs.com" className={styles.emailLink}>
-                    apply@seattleventurelabs.com
+                  <a 
+                    href="https://calendly.com/seattleventurelabs/discovery-call" 
+                    className={styles.calendlyButton}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book a 15-min Discovery Call
                   </a>
                   <p className={styles.emailNote}>
-                    Include your track preference (Launchpad, ProductLab, or Pitch & Win) in your email.
+                    Prefer email? Reach us at{' '}
+                    <a href="mailto:apply@seattleventurelabs.com" className={styles.emailLink}>
+                      apply@seattleventurelabs.com
+                    </a>
                   </p>
                 </div>
               </div>

@@ -34,10 +34,10 @@ export default function Home() {
                 The Bridge to Global Scale
               </h1>
               <p className={styles.heroSubheadline}>
-                For the world's most ambitious founders, Seattle Venture Labs is the definitive gateway to the US market and Tier-1 venture capital.
+                For international founders ready to dominate the world's largest market, Seattle Venture Labs is your operational co-founder for US market entry.
               </p>
               <p className={styles.heroNarrative}>
-                You have conquered your local market. You have built a product that defies borders. But the chasm between regional success and global dominance is vast. Seattle Venture Labs exists to build that bridge. We do not just offer advice; we reconstruct your business foundation for American resilience. Situated in the cloud capital of the world, we act as your operational co-founder, transforming foreign disruptors into US venture-backed powerhouses.
+              You've proven your success in your local market. Now you're ready for America—the world’s largest consumer market and deepest capital pool. But international founders face unique challenges: visa complexity, cultural translation, enterprise sales cycles, and VC expectations. Seattle Venture Labs exists to solve these problems. Based in the cloud capital of the world—home to AWS and Azure—we work alongside you as fractional co-founders, not just advisors. We help you land your first U.S. enterprise pilots, refine your pitch for American investors, and transform your company into a U.S. venture-backed powerhouse.
               </p>
               <div className={styles.heroActions}>
                 <Button href="/admissions" variant="primary" arrow>Apply Now</Button>
@@ -51,23 +51,26 @@ export default function Home() {
         <section className="section">
           <div className="container">
             <h2 className="section-title">Why Seattle Venture Labs?</h2>
+            <p className={styles.sectionIntro}>
+              Unlike traditional accelerators that offer advice and introductions, we work alongside you as operational partners—solving the specific problems international founders face in the US market.
+            </p>
             <div className={styles.valueGrid}>
               <div className={styles.valueCard}>
-                <h3 className={styles.valueTitle}>The Bridge Model</h3>
+                <h3 className={styles.valueTitle}>Seattle: Your US Operating Base</h3>
                 <p className={styles.valueDescription}>
-                  Three distinct tracks to fundability. Whether you need market validation (Launchpad), technical credibility (ProductLab), or capital injection (Pitch & Win)—we have a proven path for you.
+                  While Silicon Valley is where capital lives, Seattle is where enterprise technology is built. Home to AWS, Microsoft, and hundreds of cloud-first enterprises, Seattle offers the talent, partnerships, and cost efficiency to build your US operations—at 40% less than the Bay Area.
                 </p>
               </div>
               <div className={styles.valueCard}>
-                <h3 className={styles.valueTitle}>Fractional Co-founder</h3>
+                <h3 className={styles.valueTitle}>Fractional Co-founder Model</h3>
                 <p className={styles.valueDescription}>
-                  Our partners work alongside you as operational co-founders, securing your first US pilot contracts and force-multiplying your network through Seattle's enterprise ecosystem.
+                  We don't just advise—we execute. Our partners join your weekly standups, make introductions from their networks, help close your first US pilot deals, and navigate visa and legal complexities. Think of us as a US-based co-founder who's done this before.
                 </p>
               </div>
               <div className={styles.valueCard}>
-                <h3 className={styles.valueTitle}>Tier-1 Access</h3>
+                <h3 className={styles.valueTitle}>International Founder Expertise</h3>
                 <p className={styles.valueDescription}>
-                  Exclusive closed-door sessions with partners from Sand Hill Road and Seattle's top firms. This is not theater—these are high-stakes boardroom meetings for proven founders.
+                  Generic accelerators treat all founders the same. We specialize in the unique challenges of cross-border expansion: cultural translation for US buyers, visa pathways, "flipping" corporate structure, and positioning your story for American investors.
                 </p>
               </div>
             </div>
@@ -80,35 +83,35 @@ export default function Home() {
             <h2 className="section-title">The Bridge Model</h2>
             <div className={styles.bridgeContent}>
               <p className={styles.bridgeIntro}>
-                We offer three distinct paths to fundability, each utilizing our Silicon Valley partner network as the ultimate "testing ground." Choose your track based on your startup's current stage and most pressing need—market validation, technical credibility, or capital injection.
+                Each track addresses a specific barrier international founders face in the US market. Build from Seattle, validate with enterprise partners, then access Silicon Valley capital through our investor network. Choose based on your startup's stage and most pressing need.
               </p>
               <div className={styles.phaseGrid}>
                 <div className={styles.phaseCard}>
                   <div className={styles.phaseNumber}>1</div>
                   <h3 className={styles.phaseTitle}>Launchpad</h3>
-                  <p className={styles.phaseDuration}>8 Weeks • GTM Sprint</p>
+                  <p className={styles.phaseDuration}>8 Weeks • GTM Sprint • 15-20 hrs/week</p>
                   <p className={styles.phaseDescription}>
-                    Transform your product into a viral sensation. Acquire 10,000+ users through strategic SNS campaigns and video content. Top performers fast-track to AI Summit stage at Plug and Play Tech Center.
+                    Validate US market demand through structured go-to-market execution. B2C founders target 10K+ users via content marketing; B2B founders secure 3-5 qualified enterprise pilot conversations. Top performers earn AI Summit stage at Plug and Play.
                   </p>
-                  <span className={styles.phaseDeliverable}>→ 10,000+ users via SNS/Video</span>
+                  <span className={styles.phaseDeliverable}>→ B2C: 10K+ users | B2B: 3-5 pilot LOIs</span>
                 </div>
                 <div className={styles.phaseCard}>
                   <div className={styles.phaseNumber}>2</div>
                   <h3 className={styles.phaseTitle}>ProductLab</h3>
-                  <p className={styles.phaseDuration}>12 Weeks • Technical Siege</p>
+                  <p className={styles.phaseDuration}>12 Weeks • Technical Validation • 20-25 hrs/week</p>
                   <p className={styles.phaseDescription}>
-                    Validate your technology to Silicon Valley standards. Work with ex-FAANG engineers to build a production-ready PoC that passes rigorous VC technical due diligence. Leverage UW CoMotion Labs resources.
+                    Achieve technical credibility that passes US VC due diligence. Work with Seattle's enterprise engineering talent—the same teams that built AWS and Azure—to produce investor-ready technical documentation and architecture reviews.
                   </p>
-                  <span className={styles.phaseDeliverable}>→ PoC & SV Engineering Audit</span>
+                  <span className={styles.phaseDeliverable}>→ Technical audit + Enterprise-grade PoC</span>
                 </div>
                 <div className={styles.phaseCard}>
                   <div className={styles.phaseNumber}>3</div>
                   <h3 className={styles.phaseTitle}>Pitch & Win</h3>
-                  <p className={styles.phaseDuration}>6 Weeks • Capital Bridge</p>
+                  <p className={styles.phaseDuration}>6 Weeks • Investor Readiness • 10-15 hrs/week</p>
                   <p className={styles.phaseDescription}>
-                    Secure investment from Silicon Valley's top VCs. Culminate in Demo Day with private VC room sessions. Prepare for Startup World Cup regional stage—compete for $1M investment prize.
+                    Transform your pitch for American investors. Intensive coaching from active VCs, culminating in Demo Day with private investor meetings. Top performers compete in Startup World Cup for $1M investment prize.
                   </p>
-                  <span className={styles.phaseDeliverable}>→ Demo Day + Private VC Room</span>
+                  <span className={styles.phaseDeliverable}>→ Demo Day + 10+ investor meetings</span>
                 </div>
               </div>
               <div className={styles.bridgeActions}>

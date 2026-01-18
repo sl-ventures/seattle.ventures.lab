@@ -336,18 +336,40 @@
   margin-bottom: var(--space-4);
 }
 
+.calendlyButton {
+  display: inline-block;
+  padding: var(--space-4) var(--space-8);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-6);
+  text-decoration: none;
+}
+
+.calendlyButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  color: var(--color-white);
+}
+
 .emailLink {
-  display: block;
-  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-primary);
-  margin-bottom: var(--space-4);
+  text-decoration: underline;
+}
+
+.emailLink:hover {
+  color: var(--color-primary-dark);
 }
 
 .emailNote {
   font-size: var(--font-size-sm);
   color: var(--color-gray-500);
-  font-style: italic;
+  margin-top: var(--space-4);
 }
 
 /* FAQ */

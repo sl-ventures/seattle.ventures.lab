@@ -75,10 +75,10 @@ export default function Community() {
             <div className={styles.eventsContent}>
               <div className={styles.eventCard}>
                 <div className={styles.eventBadge}>Upcoming</div>
-                <h3 className={styles.eventTitle}>Demo Day: March 2026 Cohort</h3>
-                <p className={styles.eventDate}>Fall 2026</p>
+                <h3 className={styles.eventTitle}>Pitch & Win Demo Day: Q1 2026</h3>
+                <p className={styles.eventDate}>March 2026</p>
                 <p className={styles.eventDescription}>
-                  The culmination of the six-month program. Founders present to curated investors from Sand Hill Road and Seattle's top firms in closed-door boardroom sessions.
+                  The culmination of our 6-week Pitch & Win track. Investment-ready founders present to curated investors from Sand Hill Road and Seattle's top firms in closed-door boardroom sessions.
                 </p>
               </div>
               <div className={styles.eventCard}>

@@ -13,7 +13,7 @@ export default function About() {
           <div className="container">
             <h1 className={styles.pageTitle}>About Seattle Venture Labs</h1>
             <p className={styles.pageSubtitle}>
-              Building bridges between global innovation and American scale
+              The operational partner for international founders entering America
             </p>
           </div>
         </section>
@@ -24,7 +24,7 @@ export default function About() {
             <div className={styles.contentBlock}>
               <h2 className={styles.sectionHeading}>Our Mission</h2>
               <p className={styles.narrative}>
-                Seattle Venture Labs exists to build the bridge between regional success and global dominance. We recognize that the world's most ambitious founders are not constrained by their ideas, but by their geography. Our mission is to transform foreign disruptors into US venture-backed powerhouses, providing the operational infrastructure, market access, and capital connections that turn international startups into American success stories.
+                Seattle Venture Labs helps international founders succeed in the world's largest market. We're not another accelerator offering advice and introductions—we're operational co-founders who work alongside you to solve the specific problems of US market entry: navigating visa pathways, translating your pitch for American investors, landing enterprise pilot deals, and building the operational foundation for American scale.
               </p>
             </div>
           </div>
@@ -140,27 +140,41 @@ export default function About() {
           </div>
         </section>
 
-        {/* Values */}
+        {/* What Makes Us Different */}
         <section className="section section-gray">
           <div className="container">
-            <h2 className="section-title">Our Values</h2>
-            <div className={styles.valuesGrid}>
-              <div className={styles.valueItem}>
-                <h3 className={styles.valueTitle}>Rigorous Selection</h3>
-                <p className={styles.valueDescription}>
-                  We accept less than 2% of applicants because we dedicate 100% of our resources to those who make the cut.
+            <h2 className="section-title">What Makes Us Different</h2>
+            <div className={styles.differentiatorGrid}>
+              <div className={styles.differentiatorItem}>
+                <h3 className={styles.differentiatorTitle}>Fractional Co-founder Model</h3>
+                <p className={styles.differentiatorDescription}>
+                  Traditional accelerators offer advice and introductions. We work alongside you as operational partners: 
+                  joining your weekly standups, making calls on your behalf, helping close deals, and navigating 
+                  the complexities of US market entry. Think of us as a US-based co-founder who's done this before.
                 </p>
               </div>
-              <div className={styles.valueItem}>
-                <h3 className={styles.valueTitle}>Operational Partnership</h3>
-                <p className={styles.valueDescription}>
-                  We don't just invest—we operate. Our partners work alongside you as fractional co-founders.
+              <div className={styles.differentiatorItem}>
+                <h3 className={styles.differentiatorTitle}>International Founder Expertise</h3>
+                <p className={styles.differentiatorDescription}>
+                  Y Combinator, Techstars, and 500 Global treat all founders the same. We specialize in the unique 
+                  challenges of cross-border expansion: visa pathways (B1/B2, O-1), corporate "flipping" to Delaware, 
+                  cultural translation for US enterprise buyers, and positioning your story for American investors.
                 </p>
               </div>
-              <div className={styles.valueItem}>
-                <h3 className={styles.valueTitle}>Long-term Commitment</h3>
-                <p className={styles.valueDescription}>
-                  Access to our Alumni Forum ensures your support network remains active long after graduation.
+              <div className={styles.differentiatorItem}>
+                <h3 className={styles.differentiatorTitle}>Seattle Operating Base</h3>
+                <p className={styles.differentiatorDescription}>
+                  Silicon Valley is where capital lives—but it's expensive and competitive. Seattle offers 
+                  world-class enterprise talent (AWS, Microsoft), 40% lower operating costs, and access to 
+                  the same investor networks through our Bay Area partners. Build here, raise there.
+                </p>
+              </div>
+              <div className={styles.differentiatorItem}>
+                <h3 className={styles.differentiatorTitle}>Selective Cohorts</h3>
+                <p className={styles.differentiatorDescription}>
+                  We work deeply with a small number of founders rather than broadly with many. 
+                  This means real operational support, not just curriculum and demo day. 
+                  Every accepted founder gets meaningful partner time and attention.
                 </p>
               </div>
             </div>
