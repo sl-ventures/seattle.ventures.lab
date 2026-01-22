@@ -37,6 +37,8 @@ EXPOSE 3000
 
 ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
+ENV GOOGLE_WORKSPACE_SUBJECT jsong@seattlepartners.us
+ENV GOOGLE_CALENDAR_ID jsong@seattlepartners.us
 
 CMD ["node", "server.js"]
 

@@ -86,7 +86,7 @@ export default function Portfolio() {
           <div className="container">
             <h1 className={styles.pageTitle}>Portfolio</h1>
             <p className={styles.pageSubtitle}>
-              International startups bridging to American scale
+              International startups bridging to U.S. scale
             </p>
           </div>
         </section>
@@ -162,7 +162,7 @@ export default function Portfolio() {
             <div className={styles.mapNote}>
               <h2 className={styles.mapTitle}>Interactive Portfolio Map</h2>
               <p className={styles.mapDescription}>
-                Coming soon: A visual WebGL globe showing the origin of each startup and their expansion into the US. 
+                Coming soon: A visual WebGL globe showing the origin of each startup and their expansion into the U.S. 
                 Hover states will display startup logos and "bridged" metrics like "From Seoul to Seattle: $2M Seed Secured."
               </p>
             </div>

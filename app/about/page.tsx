@@ -13,7 +13,7 @@ export default function About() {
           <div className="container">
             <h1 className={styles.pageTitle}>About Seattle Venture Labs</h1>
             <p className={styles.pageSubtitle}>
-              The operational partner for international founders entering America
+              The operational partner for international founders entering the U.S.
             </p>
           </div>
         </section>
@@ -24,7 +24,7 @@ export default function About() {
             <div className={styles.contentBlock}>
               <h2 className={styles.sectionHeading}>Our Mission</h2>
               <p className={styles.narrative}>
-                Seattle Venture Labs helps international founders succeed in the world's largest market. We're not another accelerator offering advice and introductions—we're operational co-founders who work alongside you to solve the specific problems of US market entry: navigating visa pathways, translating your pitch for American investors, landing enterprise pilot deals, and building the operational foundation for American scale.
+                Seattle Venture Labs helps international founders succeed in the world's largest market. We're not another accelerator offering advice and introductions—we're operational co-founders who work alongside you to solve the specific problems of U.S. market entry: navigating visa pathways, translating your pitch for American investors, landing enterprise pilot deals, and building the operational foundation for U.S. scale.
               </p>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function About() {
             <h2 className="section-title">The Seattle Advantage</h2>
             <div className={styles.advantageContent}>
               <p className={styles.narrative}>
-                While Silicon Valley is the bank, Seattle is the engine room. This city builds the infrastructure that runs the modern world. For an international founder, Seattle offers a unique strategic advantage: it is the geographic midpoint between the capital markets of the East and the innovation hubs of Asia. It is a city of builders, not just talkers. By basing your US operations here, you gain access to the same talent pool that built AWS and Azure, while maintaining a cost of operation that allows your seed capital to extend significantly further than in the Bay Area.
+                While Silicon Valley is the bank, Seattle is the engine room. This city builds the infrastructure that runs the modern world. For an international founder, Seattle offers a unique strategic advantage: it is the geographic midpoint between the capital markets of the East and the innovation hubs of Asia. It is a city of builders, not just talkers. By basing your U.S. operations here, you gain access to the same talent pool that built AWS and Azure, while maintaining a cost of operation that allows your seed capital to extend significantly further than in the Bay Area.
               </p>
               <div className={styles.advantageGrid}>
                 <div className={styles.advantageCard}>
@@ -61,6 +61,42 @@ export default function About() {
                   <h3 className={styles.cardTitle}>Geographic Bridge</h3>
                   <p className={styles.cardDescription}>
                     Strategic location between Asian markets and East Coast capital, making it ideal for cross-border operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Hubs */}
+        <section className="section">
+          <div className="container">
+            <h2 className="section-title">Our Hubs</h2>
+            <div className={styles.advantageContent}>
+              <p className={styles.narrative}>
+                Seattle Venture Labs operates across three strategic hubs, each designed to accelerate a
+                different stage of growth for international founders.
+              </p>
+              <div className={styles.advantageGrid}>
+                <div className={styles.advantageCard}>
+                  <h3 className={styles.cardTitle}>Seattle</h3>
+                  <p className={styles.cardDescription}>
+                    Your operating base for building the core team, product, and enterprise traction with
+                    access to world-class engineering talent and cloud infrastructure leaders.
+                  </p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <h3 className={styles.cardTitle}>Silicon Valley</h3>
+                  <p className={styles.cardDescription}>
+                    The capital and partnership hub where founders deepen investor relationships, refine
+                    fundraising narratives, and plug into the Bay Area venture ecosystem.
+                  </p>
+                </div>
+                <div className={styles.advantageCard}>
+                  <h3 className={styles.cardTitle}>Detroit</h3>
+                  <p className={styles.cardDescription}>
+                    The industrial and manufacturing corridor for pilots in mobility, logistics, and
+                    advanced hardware—connecting founders to operators who scale real-world deployments.
                   </p>
                 </div>
               </div>
@@ -95,7 +131,7 @@ export default function About() {
                 <h3 className={styles.teamName}>Jaehee Song</h3>
                 <p className={styles.teamTitle}>Co-Founder, Managing Partner</p>
                 <p className={styles.teamBio}>
-                  With over 20 years in data engineering and AI, Jaehee has scaled platforms for multiple successful startups as a founder and investor, helping companies navigate the US market.
+                  With over 20 years in data engineering and AI, Jaehee has scaled platforms for multiple successful startups as a founder and investor, helping companies navigate the U.S. market.
                 </p>
                 <div className={styles.teamSocial}>
                   <a href="https://www.linkedin.com/in/jaehee-song-b223002/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
@@ -110,7 +146,7 @@ export default function About() {
                 <h3 className={styles.teamName}>Jim Choi</h3>
                 <p className={styles.teamTitle}>Associate Advisor</p>
                 <p className={styles.teamBio}>
-                  A business strategist with 12+ years in eClinical solutions and M&A, Jim bridges diverse business cultures across the US, EU, and Asia to foster growth for emerging companies.
+                  A business strategist with 12+ years in eClinical solutions and M&A, Jim bridges diverse business cultures across the U.S., EU, and Asia to foster growth for emerging companies.
                 </p>
                 <div className={styles.teamSocial}>
                   <a href="https://www.linkedin.com/in/jimchoi1/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
@@ -150,7 +186,7 @@ export default function About() {
                 <p className={styles.differentiatorDescription}>
                   Traditional accelerators offer advice and introductions. We work alongside you as operational partners: 
                   joining your weekly standups, making calls on your behalf, helping close deals, and navigating 
-                  the complexities of US market entry. Think of us as a US-based co-founder who's done this before.
+                  the complexities of U.S. market entry. Think of us as a U.S.-based co-founder who's done this before.
                 </p>
               </div>
               <div className={styles.differentiatorItem}>
@@ -158,7 +194,7 @@ export default function About() {
                 <p className={styles.differentiatorDescription}>
                   Y Combinator, Techstars, and 500 Global treat all founders the same. We specialize in the unique 
                   challenges of cross-border expansion: visa pathways (B1/B2, O-1), corporate "flipping" to Delaware, 
-                  cultural translation for US enterprise buyers, and positioning your story for American investors.
+                  cultural translation for American enterprise buyers, and positioning your story for American investors.
                 </p>
               </div>
               <div className={styles.differentiatorItem}>

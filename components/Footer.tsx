@@ -10,7 +10,7 @@ export default function Footer() {
             <div className={styles.logo}>SVL</div>
             <p className={styles.footerDescription}>
               Seattle Venture Labs exists to build the bridge between regional success and global dominance. 
-              We transform foreign disruptors into US venture-backed powerhouses.
+              We transform foreign disruptors into U.S. venture-backed powerhouses.
             </p>
           </div>
           <div className={styles.footerNav}>

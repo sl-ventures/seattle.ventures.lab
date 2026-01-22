@@ -24,15 +24,14 @@ export default function Program() {
             <div className={styles.contentBlock}>
               <h2 className={styles.sectionHeading}>Program Overview</h2>
               <p className={styles.narrative}>
-                Each track addresses a specific barrier international founders face when entering the US market. 
-                Our methodology: build your US operations from Seattle (40% lower cost than Bay Area, world-class enterprise talent), 
+                Each track addresses a specific barrier international founders face when entering the U.S. market. 
+                Our methodology: build your U.S. operations from Seattle (40% lower cost than Bay Area, world-class enterprise talent), 
                 validate with our Pacific Northwest and California partner network, then access Silicon Valley capital when you're ready.
               </p>
               <div className={styles.tracksTable}>
                 <table className={styles.programTable}>
                   <thead>
                     <tr>
-                      <th>Track</th>
                       <th>Program</th>
                       <th>Duration</th>
                       <th>Time Commitment</th>
@@ -41,23 +40,20 @@ export default function Program() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Track 1</td>
                       <td>Launchpad</td>
-                      <td>8 weeks</td>
+                      <td>12 weeks</td>
                       <td>15-20 hrs/week</td>
-                      <td>B2C: 10K+ users | B2B: 3-5 pilot LOIs</td>
+                      <td>B2C: 1K ~ 10K+ users | B2B: 2-5 pilot LOIs</td>
                     </tr>
                     <tr>
-                      <td>Track 2</td>
                       <td>ProductLab</td>
-                      <td>12 weeks</td>
+                      <td>4 weeks</td>
                       <td>20-25 hrs/week</td>
                       <td>Technical audit + Enterprise-grade PoC</td>
                     </tr>
                     <tr>
-                      <td>Track 3</td>
                       <td>Pitch & Win</td>
-                      <td>6 weeks</td>
+                      <td>4 weeks</td>
                       <td>10-15 hrs/week</td>
                       <td>Demo Day + 10+ investor meetings</td>
                     </tr>
@@ -73,11 +69,11 @@ export default function Program() {
           <div className="container">
             <div className={styles.trackSection}>
               <div className={styles.trackHeader}>
-                <span className={styles.trackLabel}>Track 1</span>
+
                 <h2 className={styles.trackTitle}>Launchpad</h2>
                 <p className={styles.trackSubtitle}>The GTM Sprint</p>
                 <div className={styles.trackMeta}>
-                  <span className={styles.duration}>8 Weeks</span>
+                  <span className={styles.duration}>12 Weeks</span>
                   <span className={styles.focus}>Market Validation</span>
                 </div>
               </div>
@@ -86,12 +82,12 @@ export default function Program() {
                 <div className={styles.trackDescription}>
                   <h3 className={styles.subHeading}>What You&apos;ll Achieve</h3>
                   <p className={styles.narrative}>
-                    Validate US market demand through structured go-to-market execution. This 8-week sprint 
+                    Validate U.S. market demand through structured go-to-market execution. This 12-week program 
                     (15-20 hours/week commitment) follows different paths based on your business model:
                   </p>
                   <ul className={styles.pathList}>
-                    <li><strong>B2C Founders:</strong> Build an engaged US audience of 10,000+ users through content marketing, influencer partnerships, and community building.</li>
-                    <li><strong>B2B Founders:</strong> Secure 3-5 qualified enterprise pilot conversations with US companies, including warm introductions through our Seattle enterprise network (Microsoft, Amazon ecosystem partners).</li>
+                    <li><strong>B2C Founders:</strong> Build an engaged American audience of 10,000+ users through content marketing, influencer partnerships, and community building.</li>
+                    <li><strong>B2B Founders:</strong> Secure 3-5 qualified enterprise pilot conversations with American companies, including warm introductions through our Seattle enterprise network (Microsoft, Amazon ecosystem partners).</li>
                   </ul>
                   <p className={styles.narrative}>
                     Top performers across both paths earn a showcase opportunity at Plug and Play Tech Center&apos;s AI Summit.
@@ -102,10 +98,10 @@ export default function Program() {
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
                       <span className={styles.weekNumber}>Week 1-2</span>
-                      <h4 className={styles.weekTitle}>US Market Deep-Dive & ICP Definition</h4>
+                      <h4 className={styles.weekTitle}>U.S. Market Deep-Dive & ICP Definition</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Comprehensive US market analysis with competitive positioning</li>
+                      <li>Comprehensive U.S. market analysis with competitive positioning</li>
                       <li>Define Ideal Customer Profile (ICP) tailored to American buyers</li>
                       <li>B2C: Identify content channels and viral opportunities</li>
                       <li>B2B: Map target accounts and decision-maker personas</li>
@@ -121,7 +117,7 @@ export default function Program() {
                       <li>B2C: Platform strategies for TikTok, Instagram, YouTube</li>
                       <li>B2B: LinkedIn outreach sequences and email campaigns</li>
                       <li>Set up tracking, attribution, and CRM infrastructure</li>
-                      <li>Develop messaging that resonates with US audiences</li>
+                      <li>Develop messaging that resonates with American audiences</li>
                     </ul>
                   </div>
 
@@ -140,7 +136,7 @@ export default function Program() {
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 7-8</span>
+                      <span className={styles.weekNumber}>Week 7-12</span>
                       <h4 className={styles.weekTitle}>Execution Sprint & Results Documentation</h4>
                     </div>
                     <ul className={styles.weekList}>
@@ -155,7 +151,7 @@ export default function Program() {
                 <div className={styles.trackOutcome}>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Deliverable</h4>
-                    <p className={styles.outcomeText}>B2C: 10K+ users | B2B: 3-5 pilot LOIs + GTM playbook</p>
+                    <p className={styles.outcomeText}>B2C: 1k ~ 10K+ users | B2B: 2-5 pilot LOIs + GTM playbook</p>
                   </div>
                   <div className={styles.outcomeCard}>
                     <h4 className={styles.outcomeTitle}>Seattle Advantage</h4>
@@ -176,11 +172,11 @@ export default function Program() {
           <div className="container">
             <div className={styles.trackSection}>
               <div className={styles.trackHeader}>
-                <span className={styles.trackLabel}>Track 2</span>
+                
                 <h2 className={styles.trackTitle}>ProductLab</h2>
                 <p className={styles.trackSubtitle}>The Technical Siege</p>
                 <div className={styles.trackMeta}>
-                  <span className={styles.duration}>12 Weeks</span>
+                  <span className={styles.duration}>4 Weeks</span>
                   <span className={styles.focus}>Technical Integrity</span>
                 </div>
               </div>
@@ -189,7 +185,7 @@ export default function Program() {
                 <div className={styles.trackDescription}>
                   <h3 className={styles.subHeading}>What You&apos;ll Achieve</h3>
                   <p className={styles.narrative}>
-                    Achieve technical credibility that passes US VC due diligence. This 12-week program 
+                    Achieve technical credibility that passes American VC due diligence. This 4-week program 
                     (20-25 hours/week commitment) connects you with Seattle&apos;s enterprise engineering talent—
                     the same teams that built AWS, Azure, and enterprise platforms at Microsoft and Amazon. 
                     You&apos;ll produce investor-ready technical documentation and an architecture review that 
@@ -200,40 +196,40 @@ export default function Program() {
                 <div className={styles.curriculumGrid}>
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 1-4</span>
-                      <h4 className={styles.weekTitle}>Technical Architecture Assessment</h4>
+                      <span className={styles.weekNumber}>Week 1</span>
+                      <h4 className={styles.weekTitle}>Customer Discovery & Product Discovery</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Comprehensive architecture review by Seattle enterprise engineers</li>
-                      <li>Scalability, security, and performance audit</li>
-                      <li>Gap analysis vs. enterprise/VC technical expectations</li>
-                      <li>PoC scope definition with measurable success criteria</li>
+                      <li>Define target customer segments and core pain points</li>
+                      <li>Validate problem statements with stakeholder interviews</li>
+                      <li>Refine product positioning for American enterprise buyers</li>
+                      <li>Identify critical product assumptions to test</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 5-8</span>
-                      <h4 className={styles.weekTitle}>Enterprise-Grade Development</h4>
+                      <span className={styles.weekNumber}>Week 2</span>
+                      <h4 className={styles.weekTitle}>Business Model Assessment & Technical Architecture Assessment</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Weekly code reviews with AWS/Microsoft engineering alumni</li>
-                      <li>Cloud infrastructure optimization (AWS/GCP/Azure)</li>
-                      <li>API design and documentation to Fortune 500 standards</li>
-                      <li>Performance optimization and technical debt reduction</li>
+                      <li>Review pricing, margins, and U.S. GTM assumptions</li>
+                      <li>Assess enterprise readiness and procurement fit</li>
+                      <li>Technical architecture review with Seattle enterprise engineers</li>
+                      <li>Identify scalability, security, and compliance gaps</li>
                     </ul>
                   </div>
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 9-12</span>
+                      <span className={styles.weekNumber}>Week 3-4</span>
                       <h4 className={styles.weekTitle}>Validation & Documentation</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Beta testing with pilot customers in Seattle tech ecosystem</li>
+                      <li>Validate solution fit with pilot users or design partners</li>
                       <li>Prepare technical documentation for investor due diligence</li>
-                      <li>Architecture decision records and scalability roadmap</li>
-                      <li>Production readiness certification from mentor panel</li>
+                      <li>Document architecture decisions and scalability roadmap</li>
+                      <li>Finalize validation summary and next-step plan</li>
                     </ul>
                   </div>
                 </div>
@@ -262,11 +258,11 @@ export default function Program() {
           <div className="container">
             <div className={styles.trackSection}>
               <div className={styles.trackHeader}>
-                <span className={styles.trackLabel}>Track 3</span>
+  
                 <h2 className={styles.trackTitle}>Pitch & Win</h2>
                 <p className={styles.trackSubtitle}>The Capital Bridge</p>
                 <div className={styles.trackMeta}>
-                  <span className={styles.duration}>6 Weeks</span>
+                  <span className={styles.duration}>4 Weeks</span>
                   <span className={styles.focus}>Capital Injection</span>
                 </div>
               </div>
@@ -275,7 +271,7 @@ export default function Program() {
                 <div className={styles.trackDescription}>
                   <h3 className={styles.subHeading}>What You&apos;ll Achieve</h3>
                   <p className={styles.narrative}>
-                    Secure investment from Silicon Valley&apos;s top VCs. This 6-week program transforms your pitch 
+                    Secure investment from Silicon Valley&apos;s top VCs. This 4-week program transforms your pitch 
                     into an investor magnet, culminating in a Demo Day with private VC room sessions and 
                     preparation for the Startup World Cup regional stage—where winners compete for a $1M investment prize. 
                     Gain direct pipeline access to Think Tank VC (Menlo Park, near Stanford with 100+ VCs) 
@@ -286,11 +282,11 @@ export default function Program() {
                 <div className={styles.curriculumGrid}>
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 1-2</span>
+                      <span className={styles.weekNumber}>Week 1</span>
                       <h4 className={styles.weekTitle}>Pitch Deck Refinement & Storytelling Workshop</h4>
                     </div>
                     <ul className={styles.weekList}>
-                      <li>Deconstruct and rebuild your pitch narrative for US investors</li>
+                      <li>Deconstruct and rebuild your pitch narrative for American investors</li>
                       <li>Financial modeling and unit economics optimization</li>
                       <li>Competitive positioning and market sizing frameworks</li>
                       <li>Storytelling techniques that resonate with Sand Hill Road</li>
@@ -299,7 +295,7 @@ export default function Program() {
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 3-4</span>
+                      <span className={styles.weekNumber}>Week 2</span>
                       <h4 className={styles.weekTitle}>Mock Pitch Sessions with VCs</h4>
                     </div>
                     <ul className={styles.weekList}>
@@ -312,7 +308,7 @@ export default function Program() {
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 5</span>
+                      <span className={styles.weekNumber}>Week 3</span>
                       <h4 className={styles.weekTitle}>Demo Day + Private VC Room Sessions</h4>
                     </div>
                     <ul className={styles.weekList}>
@@ -325,7 +321,7 @@ export default function Program() {
 
                   <div className={styles.weekBlock}>
                     <div className={styles.weekHeader}>
-                      <span className={styles.weekNumber}>Week 6</span>
+                      <span className={styles.weekNumber}>Week 4</span>
                       <h4 className={styles.weekTitle}>Startup World Cup Regional Competition Prep</h4>
                     </div>
                     <ul className={styles.weekList}>
