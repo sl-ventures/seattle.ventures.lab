@@ -186,6 +186,42 @@
   line-height: var(--line-height-relaxed);
 }
 
+/* Differentiator Section */
+.differentiatorGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.differentiatorItem {
+  padding: var(--space-8);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
+  transition: all var(--transition-normal);
+}
+
+.differentiatorItem:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.differentiatorTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.differentiatorDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
 @media (max-width: 1024px) {
   .teamGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -195,7 +231,8 @@
 @media (max-width: 768px) {
   .advantageGrid,
   .teamGrid,
-  .valuesGrid {
+  .valuesGrid,
+  .differentiatorGrid {
     grid-template-columns: 1fr;
   }
 }

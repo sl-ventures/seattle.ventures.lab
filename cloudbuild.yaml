@@ -46,6 +46,10 @@ steps:
       - '10'
       - '--port'
       - '3000'
+      - '--set-env-vars'
+      - 'GOOGLE_WORKSPACE_SUBJECT=jsong@seattlepartners.us,GOOGLE_CALENDAR_ID=jsong@seattlepartners.us'
+      - '--set-secrets'
+      - 'GOOGLE_SERVICE_ACCOUNT_JSON=projects/515955071466/secrets/service-account-key:latest'
 
 images:
   - 'gcr.io/$PROJECT_ID/slventures-web:$BUILD_ID'

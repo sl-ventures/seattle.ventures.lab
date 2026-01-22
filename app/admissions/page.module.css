@@ -18,6 +18,14 @@
   color: var(--color-gray-600);
 }
 
+.introText {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-12);
+}
+
 .contentBlock {
   max-width: 900px;
   margin: 0 auto;
@@ -36,6 +44,607 @@
   line-height: var(--line-height-relaxed);
 }
 
+/* Track Comparison Table */
+.trackComparisonTable {
+  overflow-x: auto;
+  margin-top: var(--space-8);
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  min-width: 800px;
+}
+
+.comparisonTable thead {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.comparisonTable th {
+  padding: var(--space-4) var(--space-3);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comparisonTable td {
+  padding: var(--space-5) var(--space-3);
+  border-bottom: 1px solid var(--color-gray-200);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  vertical-align: top;
+}
+
+.comparisonTable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparisonTable tbody tr:hover {
+  background: var(--color-gray-50);
+}
+
+.trackName {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+}
+
+.trackBadge {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-1);
+}
+
+.prerequisiteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prerequisiteList li {
+  padding: var(--space-1) 0;
+  padding-left: var(--space-4);
+  position: relative;
+}
+
+.prerequisiteList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* Program Detail Cards */
+.programDetailGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.programDetailCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.programDetailCard:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-primary);
+}
+
+.programDetailHeader {
+  padding: var(--space-6);
+  background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+  border-bottom: 1px solid var(--color-gray-200);
+  text-align: left;
+}
+
+.programBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-gray-100);
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.programDetailTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+}
+
+.programMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.metaPill {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+}
+
+.programDetailBody {
+  padding: var(--space-6);
+  flex: 1;
+}
+
+.detailSection {
+  margin-bottom: var(--space-6);
+}
+
+.detailSection:last-child {
+  margin-bottom: 0;
+}
+
+.detailHeading {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-3);
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.detailText {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+.requirementList,
+.criteriaList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirementList li,
+.criteriaList li {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  padding: var(--space-2) var(--space-3);
+  padding-left: var(--space-6);
+  position: relative;
+  line-height: var(--line-height-normal);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+}
+
+.requirementList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.criteriaList li::before {
+  content: "→";
+  position: absolute;
+  left: var(--space-2);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.programDetailFooter {
+  padding: var(--space-6);
+  padding-top: 0;
+  text-align: center;
+}
+
+/* Timeline */
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.timelineStep {
+  text-align: center;
+  position: relative;
+}
+
+.timelineStep::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -24px;
+  width: 48px;
+  height: 2px;
+  background: var(--color-gray-300);
+}
+
+.timelineStep:last-child::after {
+  display: none;
+}
+
+.stepNumber {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0 auto var(--space-4);
+}
+
+.stepTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+}
+
+.stepDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-3);
+}
+
+.stepDuration {
+  display: inline-block;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  background: var(--color-gray-100);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+}
+
+/* Application Box */
+.applicationBox {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.applicationNote {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-600);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.applicationForm {
+  padding: var(--space-12);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  text-align: left;
+}
+
+.formNote {
+  color: var(--color-gray-600);
+}
+
+.bookingWidget {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.bookingHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.bookingTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-2);
+}
+
+.bookingSubtext {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.bookingTimeZone {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-700);
+  background: var(--color-gray-100);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+}
+
+.bookingControls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 280px;
+}
+
+.bookingLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bookingInput {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-800);
+}
+
+.bookingInput:focus {
+  outline: 2px solid rgba(34, 197, 94, 0.25);
+  border-color: var(--color-primary);
+}
+
+.bookingSelect {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-800);
+  background: var(--color-white);
+}
+
+.bookingSelect:focus {
+  outline: 2px solid rgba(34, 197, 94, 0.25);
+  border-color: var(--color-primary);
+}
+
+.slotSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.slotHeader {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slotStatus {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+.slotGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+}
+
+.slotButton {
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  background: var(--color-gray-50);
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.slotButton:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.slotButtonActive {
+  border-color: var(--color-primary);
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.slotTime {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+}
+
+.slotMeta {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-600);
+}
+
+.bookingForm {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.bookingField {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.bookingButton {
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.bookingButton:disabled {
+  background: var(--color-gray-300);
+  cursor: not-allowed;
+}
+
+.bookingButton:not(:disabled):hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.bookingError {
+  font-size: var(--font-size-sm);
+  color: #DC2626;
+}
+
+.bookingSuccess {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+}
+
+.formNote p {
+  margin-bottom: var(--space-4);
+}
+
+.calendlyButton {
+  display: inline-block;
+  padding: var(--space-4) var(--space-8);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-6);
+  text-decoration: none;
+}
+
+.calendlyButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  color: var(--color-white);
+}
+
+.emailLink {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.emailLink:hover {
+  color: var(--color-primary-dark);
+}
+
+.emailNote {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-500);
+  margin-top: var(--space-4);
+}
+
+/* FAQ */
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  padding: var(--space-6);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.faqItem:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.faqQuestion {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+}
+
+.faqAnswer {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: var(--line-height-relaxed);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.ctaDescription {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-8);
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.ctaButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+/* Legacy styles for cohort cards */
 .scheduleIntro {
   text-align: center;
   font-size: var(--font-size-lg);
@@ -99,108 +708,40 @@
   margin-bottom: var(--space-2);
 }
 
-.applicationBox {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.applicationNote {
-  font-size: var(--font-size-base);
-  color: var(--color-gray-600);
-  text-align: center;
-  margin-bottom: var(--space-8);
-}
-
-.applicationForm {
-  padding: var(--space-12);
-  background: var(--color-white);
-  border: 2px dashed var(--color-gray-300);
-  border-radius: var(--radius-lg);
-  text-align: center;
-}
-
-.formNote {
-  color: var(--color-gray-600);
-}
-
-.formNote p {
-  margin-bottom: var(--space-4);
-}
-
-.emailLink {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-primary);
-}
-
-.faqGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--space-8);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.faqItem {
-  padding: var(--space-6);
-  background: var(--color-white);
-  border: 1px solid var(--color-gray-200);
-  border-radius: var(--radius-lg);
-}
-
-.faqQuestion {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-black);
-  margin-bottom: var(--space-4);
-}
-
-.faqAnswer {
-  font-size: var(--font-size-base);
-  color: var(--color-gray-600);
-  line-height: var(--line-height-relaxed);
-}
-
-.cta {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.ctaTitle {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-black);
-  margin-bottom: var(--space-4);
-}
-
-.ctaDescription {
-  font-size: var(--font-size-lg);
-  color: var(--color-gray-600);
-  margin-bottom: var(--space-8);
-}
-
-.ctaButton {
-  display: inline-block;
-  padding: var(--space-3) var(--space-6);
-  background: var(--color-primary);
-  color: var(--color-white);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  border-radius: var(--radius-md);
-  transition: all var(--transition-fast);
-}
-
-.ctaButton:hover {
-  background: var(--color-primary-dark);
-  transform: translateY(-2px);
-  color: var(--color-white);
-}
-
-@media (max-width: 768px) {
-  .cohortGrid,
-  .faqGrid {
+/* Responsive */
+@media (max-width: 1024px) {
+  .programDetailGrid {
     grid-template-columns: 1fr;
+  }
+
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .timelineStep::after {
+    display: none;
   }
 }
 
+@media (max-width: 768px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .timelineGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cohortGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparisonTable {
+    font-size: var(--font-size-xs);
+  }
+}
